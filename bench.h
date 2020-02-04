@@ -9,7 +9,7 @@
 #include <emmintrin.h>
 #include <immintrin.h>
 
-#pragma GCC optimize("no-tree-vectorize") // Pas d'optimisations SIMD qui pourraient rendre les résultats moins explicites
+#pragma GCC optimize("no-tree-vectorize") // Pas d'optimisations SIMD qui pourraient rendre les rÃ©sultats moins explicites
 
 #define TAILLE_PAGE 128
 
@@ -47,7 +47,7 @@ void init_benchmark()
 
 #define BENCH_END() \
     ({     uint64_t bench_end; \
-        asm  volatile ("rdtscp\n" \
+        asm  volatile ("rdtsc\n" \
                    "shlq $32, %%rdx\n" \
                    "orq %%rax, %%rdx\n" \
                    "movq %%rdx, %0\n" \
