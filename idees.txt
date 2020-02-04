@@ -1,0 +1,5 @@
+interesting
+https://crackmes.one/crackme/5c53840a33c5d475210bc6e9
+okay-ish : https://www.root-me.org/fr/Challenges/Cracking/ELF-x86-Basique?action_solution=voir&debut_affiche_solutions=1#pagination_affiche_solutions
+Potentiellement bien intéressant une fois qu'ils ont la main : https://crackmes.one/crackme/5c8e1a9533c5d4776a837ecf
+Parfait comme premier "vrai" chall ! : https://crackmes.one/crackme/5c11dcaf33c5d41e58e00578
