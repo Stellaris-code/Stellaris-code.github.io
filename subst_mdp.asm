@@ -1,3 +1,7 @@
+; Command : nasm -f elf64 subst_mdp.asm -o chal3.o && ld chal3.o -dynamic-linker /lib64/ld-linux-x86-64.so.2 -lc -m elf_x86_64
+
+
+
 BITS 64
 
 	global    _start
