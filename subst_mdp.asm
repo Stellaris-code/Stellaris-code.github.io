@@ -14,14 +14,20 @@ _start:
 
 	mov rdi, scanf_str
 	mov rsi, buffer
-	call scanf	
+	call scanf
+
+subst_init:
+	mov rcx, 32
+	mov dl, 127
+	sub dl, cl
+	mov [substitution+rax], 	
 
 	mov rsi, buffer
 subst_loop:
 	mov al, byte [rsi]
 	cmp al, 0
-	jz .subts_loop_out
-        mov al, byte [substitution+al]
+	jz .subst_loop_out
+        mov al, byte [substitution+rax]
 	mov byte [rsi], al
 	inc rsi
 	jmp subst_loop
